@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+
+  "name": "Jasoncross",
+  "short_name": "Jasoncross",
+  "description": "Veracross utility: See your class average grade. Nobody is individually identifiable.",
+  "version": "2.0",
+  "icons": {"128": "icon.png" },
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://portals.veracross.com/nist/student", "http://portals.veracross.com/nist/student"],
+      "js": ["jquery.js", "veracross.js"]
+    },
+    {
+      "matches": ["https://portals-embed.veracross.com/nist/student/classes/*", "http://portals-embed.veracross.com/nist/student/classes/*"],
+      "js": ["jquery.js", "identity.js", "page.js", "page_extras.js"],
+      "css": ["page.css"]
+    }
+  ],
+  "web_accessible_resources": [
+        "page.css",
+        "12345678labels.png"
+  ],
+  "permissions": [
+      "storage"
+  ]
+}

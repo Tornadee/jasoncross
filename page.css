@@ -1,0 +1,120 @@
+div.content {
+	background: rgba(0,0,0,0) !important;
+}
+#page-enrollment-details {
+	color: black !important;
+	background: none !important;
+}
+.assignment-criteria-grade {
+	pointer-events:none;
+	text-align: center;
+	width: 26px;
+	background-repeat: no-repeat;
+}
+.newb_class {
+	color: white;
+	text-align: center;
+	background: #363636;
+	margin-left: -13px;
+	margin-right: -13px;
+	margin-bottom: -12px;
+	margin-top: 7px;
+	border: 1px solid #cccccc !important;
+	border-top: none !important;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+	height: 20px;
+	width: 50px;
+	opacity: 1;
+	padding-top: 4px;
+	animation: fadein 0.5s;
+}
+.dist_class {
+	position: absolute;
+	top: 30px;
+	right: 57px;
+	width: 160px;
+	height: 25px;
+}
+.bar_class {
+	background: #cccccc;
+	color: rgba(0,0,0,0);
+	border-bottom: 1px solid #cccccc;
+	display:inline-block;
+	width: 16px;
+	margin-right: 1px;
+	margin-left: 1px;
+	position: absolute;
+	bottom: 0px;
+	animation: fadeintwo 0.5s;
+}
+.assignment-criteria {
+	text-align: right;
+}
+.assignment-criteria-name {
+	min-width: 130px !important;*/
+}
+@keyframes fadein {
+    from { opacity: 0; height: 0px;}
+    to   { opacity: 1; height: 20px;}
+}
+@keyframes fadeintwo {
+    from { opacity: 0; width: 0px;margin-left: 9px;}
+    to   { opacity: 1; width:16px;margin-left: 1px;}
+}
+.heading_class {
+	font-size: 20px;
+	font-family: Arial;
+	font-weight: 300;
+}
+.popup_class {
+	position: absolute;
+	z-index: 1000;
+	width: 400px;
+	padding: 10px;
+	left: calc(50% - 210px);
+	top: 80px;
+	background: white;
+	font-size: 13px;
+	box-shadow: 2px 4px 20px rgba(0,0,0,0.5);
+}
+#allowaccess {
+	border: 1px solid black;
+	width: 180px;
+	background: rgba(255,0,0,0.2);
+	padding: 10px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+#allowaccess:hover {
+	background: rgba(0,0,0,0.05);
+}
+a.filter-updates, a.filter-notifications, a.filter-feedback, a.filter-problems {
+	visibility: hidden;
+}
+a.filter-updates {
+
+}
+.ABCD_table {
+	border-collapse: collapse;
+	text-align: center;
+}
+.ABCD_table, tr, th {
+	border: 1px solid #a5a5a5;
+	padding: 5px;
+}
+.ABCD_table th {
+	min-width: 50px;
+}
+div.padding_analysis {
+	text-align: center;
+	padding: 28px;
+}
+.jc_title {
+	font-family: 'SourceSansPro', Arial, sans-serif;
+}
+#myCanvas {
+	width: 300px;
+	height: 300px;
+	background: url("12345678labels.png");
+}
